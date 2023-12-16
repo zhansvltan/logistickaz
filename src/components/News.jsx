@@ -40,7 +40,7 @@ const NewsComponent = () => {
 
   return (
     <div>
-      <div style={{ paddingLeft: '130px', paddingTop: '70px' }}>
+      <div style={{ paddingLeft: '130px', paddingTop: '50px' }}>
         <h2 className={style.text}>Новости Ассоциации</h2>
       </div>
       <div className={style.news} style={{ paddingLeft: '75px' }}>

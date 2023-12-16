@@ -2,6 +2,7 @@ import React from 'react'
 import ImgComponent from '../components/Image'
 import NavComponent from '../components/Navbar'
 import NewsComponent from '../components/News'
+import EventsComponent from '../components/Events'
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
         ></div>
       </div>
       <NewsComponent />
+      <EventsComponent />
     </>
   )
 }

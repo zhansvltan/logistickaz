@@ -23,6 +23,8 @@
   font-family: 'Montserrat';
   font-weight: 600;
   line-height: 18px;
+  margin: 0%;
+  padding: 0%;
 }
 
 .cardimg {
@@ -47,6 +49,7 @@
   padding: 0 74px 0 16px;
   margin: 0%;
   margin-bottom: 22px;
+  white-space: nowrap;
 }
 
 .low {
@@ -70,6 +73,7 @@
   font-weight: 500;
   line-height: 26px;
   margin: 0%;
+  white-space: nowrap;
 }
 .text2 {
   color: #030303;
@@ -79,4 +83,5 @@
   line-height: 26px;
   text-align: right;
   margin: 0%;
+  white-space: nowrap;
 }
