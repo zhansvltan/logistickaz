@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      <h1>Working</h1>
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/cabinet" exact element={<CabinetPage />} />

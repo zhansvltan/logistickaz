@@ -1,13 +1,19 @@
 .nav {
+  padding-left: 200px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-
+.img {
+  padding-right: 212px;
+}
 .links {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 35px;
   font-size: 26px;
   color: #ffffff;
 }

@@ -8,7 +8,7 @@ import logo from '../assets/logo.svg'
 export default function NavComponent() {
   return (
     <div className={style.nav}>
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className={style.img} />
       <div className={style.links}>
         <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
           О нас
@@ -19,11 +19,29 @@ export default function NavComponent() {
         <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
           Преимущества
         </Link>
-        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+        <Link
+          to="/"
+          style={{
+            textDecoration: 'none',
+            color: 'white',
+            marginRight: '50px',
+          }}
+        >
           Новости
         </Link>
       </div>
-      <button className={style.button}>Войти</button>
+      <button className={style.button}>
+        {' '}
+        <Link
+          to="/cabinet"
+          style={{
+            textDecoration: 'none',
+            color: 'white',
+          }}
+        >
+          Войти
+        </Link>
+      </button>
     </div>
   )
 }
