@@ -1,0 +1,12 @@
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  color: #030303;
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 48px;
+}
