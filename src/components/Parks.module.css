@@ -8,7 +8,7 @@
   @media screen and (max-width: 430px) {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 20px;
     padding-right: 60px;
     gap: 30px;
   }
