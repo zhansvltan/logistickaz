@@ -2,7 +2,8 @@ import React from 'react'
 
 import style from './Contact.module.css'
 import mapimg from '../assets/map.svg'
-
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
 export default function ContactComponent() {
   return (
     <div className={style.container}>
@@ -34,7 +35,16 @@ export default function ContactComponent() {
           />
           <button className={style.button}>Отправить</button>
         </div>
-        <img src={mapimg} alt="Map" />
+        <MapContainer
+          center={[51.505, -0.09]}
+          zoom={13}
+          style={{ height: '445px', width: '100%' }}
+        >
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={[51.505, -0.09]}>
+            <Popup>A marker example.</Popup>
+          </Marker>
+        </MapContainer>
       </div>
       <div className={style.box}>
         <div className={style.subsection}>
