@@ -9,6 +9,7 @@ const Card = ({
   logo,
   text1,
   text2,
+  text3,
   buttontext,
 }) => {
   return (
@@ -22,7 +23,10 @@ const Card = ({
           <img src={logo} alt="icon" />
           <p className={style.text1}>{text1}</p>
         </div>
-        <p className={style.text2}>{text2}</p>
+        <div className={style.lowright}>
+          <p className={style.text2}>{text2}</p>
+          <p className={style.text3}>{text3}</p>
+        </div>
       </div>
     </div>
   )

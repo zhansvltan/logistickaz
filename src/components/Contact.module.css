@@ -1,0 +1,235 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding-left: 212px;
+  padding-right: 126px;
+  @media screen and (max-width: 430px) {
+    padding-left: 130px;
+    padding-right: 70px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    padding-left: 212px;
+    padding-right: 126px;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  margin-bottom: 55px;
+  @media screen and (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.h2 {
+  color: #030303;
+  font-size: 52px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 68px;
+  text-align: center;
+  margin: 0%;
+  margin-bottom: 12px;
+  @media screen and (max-width: 430px) {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 6px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+}
+.h3 {
+  color: #030303;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  line-height: 31px;
+  text-align: center;
+  margin: 0%;
+  margin-bottom: 49px;
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+}
+.text {
+  color: #030303;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 19px;
+  margin: 0%;
+  margin-bottom: 8px;
+  @media screen and (max-width: 430px) {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 4px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+}
+.input {
+  width: 450px;
+  height: 48.06742084782121px;
+  padding: 0px 8px;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  border-radius: 24px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  line-height: 21px;
+  outline: none;
+  margin: 0%;
+  margin-bottom: 28px;
+  @media screen and (max-width: 430px) {
+    width: 225px;
+    height: 24px;
+    padding: 0 4px;
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    width: 360px;
+    height: 40px;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  width: 450px;
+  height: 37px;
+  padding: 0px 8px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: #5856d6;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 21px;
+  outline: none;
+  @media screen and (max-width: 430px) {
+    width: 225px;
+    height: 18px;
+    padding: 0 4px;
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    width: 360px;
+    height: 30px;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1180px;
+  height: 199px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0px 2px 10px rgba(3, 3, 3, 0.1);
+  margin: 0%;
+  margin-bottom: 45px;
+  @media screen and (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 22px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    padding: 15px;
+    margin-bottom: 22px;
+  }
+}
+
+.subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacth3 {
+  color: #030303;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 31px;
+  margin: 0%;
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.contacttext {
+  color: #030303;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  line-height: 24px;
+  margin: 0%;
+  font-weight: 100;
+  @media screen and (max-width: 430px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 431px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

@@ -1,8 +1,12 @@
-import React from 'react'
 import ImgComponent from '../components/Image'
+
 import NavComponent from '../components/Navbar'
 import NewsComponent from '../components/News'
 import EventsComponent from '../components/Events'
+import AboutComponent from '../components/About'
+import MembershipComponent from '../components/Membership'
+import ParksComponent from '../components/Parks'
+import ContactComponent from '../components/Contact'
 
 const HomePage = () => {
   return (
@@ -26,6 +30,10 @@ const HomePage = () => {
       </div>
       <NewsComponent />
       <EventsComponent />
+      <AboutComponent />
+      <MembershipComponent />
+      <ParksComponent />
+      <ContactComponent />
     </>
   )
 }

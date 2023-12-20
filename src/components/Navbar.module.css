@@ -6,9 +6,18 @@
   align-items: center;
   position: absolute;
   z-index: 100;
+  @media screen and (max-width: 430px) {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
 }
 .img {
   padding-right: 212px;
+  width: 106px;
+  @media screen and (max-width: 430px) {
+    width: 53px;
+    padding-right: 106px;
+  }
 }
 .links {
   display: flex;
@@ -16,6 +25,10 @@
   gap: 35px;
   font-size: 26px;
   color: #ffffff;
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
+    gap: 20px;
+  }
 }
 
 .button {

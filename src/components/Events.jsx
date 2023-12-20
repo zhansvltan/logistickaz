@@ -17,7 +17,8 @@ const EventsComponent = () => {
       description: 'Learn about the association and its mission',
       logo: icon1,
       text1: 'Membership',
-      text2: 'Welcome',
+      text2: 'Welcome to LogisticKaz!',
+      text3: 'Discover the logistics and industrial parks of Kazakhstan',
       buttontext: 'Learn more',
     },
     {
@@ -25,8 +26,9 @@ const EventsComponent = () => {
       name: 'About LogisticKaz',
       description: 'Find out about the association and its mission',
       logo: icon2,
-      text1: 'Contact us for',
-      text2: 'Join our',
+      text1: 'Contact us for more information',
+      text2: 'Join our network of logistics professionals',
+      text3: 'Explore the benefits of membership',
       buttontext: 'Learn more',
     },
     {
@@ -35,17 +37,18 @@ const EventsComponent = () => {
       description: 'Connect with logistics experts',
       logo: icon3,
       text1: 'Expand your',
-      text2: 'Access Pro',
+      text2: 'Access exclusive resources and events',
+      text3: 'Promote your company to a wider audience',
       buttontext: 'Join now',
     },
   ]
 
   return (
     <div>
-      <div style={{ paddingLeft: '130px', paddingTop: '50px' }}>
+      <div className={style.section}>
         <h2 className={style.text}>Мероприятия Ассоциации</h2>
       </div>
-      <div className={style.news} style={{ paddingLeft: '75px' }}>
+      <div className={style.news}>
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
         ))}

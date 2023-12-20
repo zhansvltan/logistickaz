@@ -15,7 +15,8 @@ const NewsComponent = () => {
       description: 'Browse different logistics and industrial',
       logo: icon1,
       text1: 'Kazakhstan',
-      text2: 'RussiaCh',
+      text2: 'Russia',
+      text3: 'China',
       buttontext: 'Read more',
     },
     {
@@ -24,7 +25,8 @@ const NewsComponent = () => {
       description: 'Watch videos about logistics and',
       logo: icon1,
       text1: 'Kazakhstan',
-      text2: 'RussiaCh',
+      text2: 'Russia',
+      text3: 'China',
       buttontext: 'View details',
     },
     {
@@ -33,17 +35,18 @@ const NewsComponent = () => {
       description: 'Get in touch with association',
       logo: icon1,
       text1: 'Email',
-      text2: 'PhoneAdd',
+      text2: 'Phone',
+      text3: 'Address',
       buttontext: 'Play video',
     },
   ]
 
   return (
     <div>
-      <div style={{ paddingLeft: '130px', paddingTop: '50px' }}>
+      <div className={style.section}>
         <h2 className={style.text}>Новости Ассоциации</h2>
       </div>
-      <div className={style.news} style={{ paddingLeft: '75px' }}>
+      <div className={style.news}>
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
         ))}
