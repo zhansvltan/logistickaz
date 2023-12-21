@@ -1,10 +1,11 @@
 .nav {
-  padding-left: 200px;
-  padding-top: 60px;
+  padding: 10px;
+  margin-right: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
+  width: 100%;
   z-index: 100;
   @media screen and (max-width: 430px) {
     padding-left: 0px;
@@ -13,28 +14,25 @@
   }
 }
 .img {
-  padding-right: 212px;
-  width: 106px;
   @media screen and (max-width: 430px) {
-    width: 53px;
-    padding-right: 106px;
+    width: 60px;
+    margin-top: 10px;
   }
 }
+
 .links {
+  gap: 24px;
   display: flex;
   justify-content: space-between;
-  gap: 35px;
-  font-size: 26px;
+  font-size: 18px;
   color: #ffffff;
-  @media screen and (max-width: 430px) {
-    font-size: 12px;
-    gap: 20px;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 
 .button {
   cursor: pointer;
-  width: 150px;
   height: 62px;
   padding: 0px 8px;
   border: 0;
@@ -43,48 +41,38 @@
   background-color: #5856d6;
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
-  @media screen and (max-width: 430px) {
-    font-size: 12px;
-    width: 15vw;
-    height: 31px;
+
+  @media screen and (max-width: 768px) {
+    height: 46px;
   }
 }
 
-.burgerbutton {
+.mobile {
   display: none;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 }
-
-/* New styles for responsive menu */
-@media screen and (max-width: 430px) {
-  .nav {
-    padding-left: 0px;
-    padding-top: 0px;
+.burger {
+  background-color: aliceblue;
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  top: 100px;
+  right: 70px;
+  @media screen and (max-width: 500px) {
+    top: 80px;
+    right: 20px;
   }
-
-  .img {
-    padding-right: 106px;
-    width: 53px;
-  }
-
-  .links {
-    font-size: 12px;
-    gap: 20px;
-    flex-direction: column;
-    position: absolute;
-    top: 100px; /* Adjust this value based on your layout */
-    left: 0;
-    right: 0;
-    background-color: #5856d6;
-    padding: 20px;
-    display: none;
-  }
-
-  .links.showMenu {
-    display: flex;
+  a {
+    text-decoration: none;
   }
 }

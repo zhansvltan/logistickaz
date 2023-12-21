@@ -2,33 +2,21 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import style from './Navbar.module.css'
 import logo from '../assets/logo.svg'
-//FIX THE SIZES AND SPACINGS FOR BURGER BUTTON
+
+import MenuIcon from '@mui/icons-material/Menu'
 export default function NavComponent() {
-  const [isMenuOpen, setMenuOpen] = useState(false)
-
-  const handleScrollClick = (targetId) => {
-    const targetComponent = document.getElementById(targetId)
-
-    if (targetComponent) {
-      const yOffset =
-        targetComponent.getBoundingClientRect().top + window.scrollY
-
-      // Scroll to the target component
-      window.scrollTo({ top: yOffset, behavior: 'smooth' })
-
-      // Close the menu after clicking on a link
-      setMenuOpen(false)
-    }
-  }
-
+  const [open, setOpen] = React.useState(false)
   return (
     <div className={style.nav}>
       <img src={logo} alt="logo" className={style.img} />
-      <div className={`${style.links} ${isMenuOpen ? style.showMenu : ''}`}>
+      <div className={style.links}>
         <Link
           to="/"
-          style={{ textDecoration: 'none', color: 'white' }}
-          onClick={() => handleScrollClick('about')}
+          style={{
+            textDecoration: 'none',
+            color: 'white',
+            whiteSpace: 'nowrap',
+          }}
         >
           О нас
         </Link>
@@ -58,23 +46,47 @@ export default function NavComponent() {
           Новости
         </Link>
       </div>
-      <button
-        onClick={() => setMenuOpen(!isMenuOpen)}
-        className={style.burgerbutton}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+        }}
       >
-        ☰
-      </button>
-      <button className={style.button}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: 'none',
-            color: 'white',
-          }}
-        >
-          Войти
-        </Link>
-      </button>
+        {open && (
+          <div className={style.burger}>
+            <Link to="/">О нас</Link>
+            <Link to="/">Услуги</Link>
+            <Link to="/">Преимущества</Link>
+            <Link to="/">Новости</Link>
+          </div>
+        )}
+        <button className={style.button}>
+          <Link
+            to="/cabinet"
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+          >
+            Войти
+          </Link>
+        </button>
+        <div className={style.mobile}>
+          <MenuIcon
+            onClick={() => setOpen(!open)}
+            sx={{
+              background: '#5856d6',
+              borderRadius: '50%',
+              marginLeft: '20px',
+              color: 'white',
+              width: '36px',
+              alignItems: 'center',
+              height: '36px',
+              padding: '5px',
+            }}
+          />
+        </div>
+      </div>
     </div>
   )
 }
