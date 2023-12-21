@@ -1,9 +1,8 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import style from './Navbar.module.css'
 import logo from '../assets/logo.svg'
+
 import MenuIcon from '@mui/icons-material/Menu'
 export default function NavComponent() {
   const [open, setOpen] = React.useState(false)
@@ -21,10 +20,18 @@ export default function NavComponent() {
         >
           О нас
         </Link>
-        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+        <Link
+          to="/"
+          style={{ textDecoration: 'none', color: 'white' }}
+          onClick={() => handleScrollClick('mem')}
+        >
           Услуги
         </Link>
-        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+        <Link
+          to="/"
+          style={{ textDecoration: 'none', color: 'white' }}
+          onClick={() => handleScrollClick('mem')}
+        >
           Преимущества
         </Link>
         <Link
@@ -34,11 +41,11 @@ export default function NavComponent() {
             color: 'white',
             marginRight: '50px',
           }}
+          onClick={() => handleScrollClick('news')}
         >
           Новости
         </Link>
       </div>
-
       <div
         style={{
           display: 'flex',

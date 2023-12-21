@@ -4,15 +4,29 @@ import style from './About.module.css'
 import aboutimg from '../assets/about.svg'
 
 export default function AboutComponent() {
+  const handleScrollClick = () => {
+    // Replace 'targetComponentId' with the actual ID of the target component
+    const targetComponent = document.getElementById('contact')
+
+    if (targetComponent) {
+      const yOffset =
+        targetComponent.getBoundingClientRect().top + window.scrollY
+
+      // Scroll to the target component
+      window.scrollTo({ top: yOffset, behavior: 'smooth' })
+    }
+  }
   return (
-    <div className={style.about}>
+    <div className={style.about} id="about">
       <div className={style.lefthalf}>
         <h1 className={style.h1}> Об Ассоциации</h1>
         <p className={style.text}>
           АЛИП Казахстана - отраслевая некоммерческая организация, объединяющая
           большинство индустриальных парков и СЭЗ страны.
         </p>
-        <button className={style.button}>Подробнее</button>
+        <button onClick={handleScrollClick} className={style.button}>
+          Подробнее
+        </button>
         <div
           style={{
             display: 'flex',

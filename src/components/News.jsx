@@ -42,7 +42,7 @@ const NewsComponent = () => {
   ]
 
   return (
-    <div>
+    <div id="news">
       <div className={style.section}>
         <h2 className={style.text}>Новости Ассоциации</h2>
       </div>

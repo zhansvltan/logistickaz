@@ -6,7 +6,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 export default function ContactComponent() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="contact">
       <h2 className={style.h2}>Связаться с нами</h2>
       <h3 className={style.h3}>
         Свяжитесь с нами по любым интересующим Вас вопросам
