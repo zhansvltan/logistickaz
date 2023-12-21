@@ -10,7 +10,7 @@ import mem6 from '../assets/mem6.svg'
 
 export default function MembershipComponent() {
   return (
-    <div>
+    <div id="mem">
       <h1 className={style.h1}>Услуги и преимущества членства в Ассоциации</h1>
       <div className={style.subsection}>
         <div className={style.card}>

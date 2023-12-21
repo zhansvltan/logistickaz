@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 import style from './About.module.css'
 import aboutimg from '../assets/about.svg'
@@ -17,7 +17,7 @@ export default function AboutComponent() {
     }
   }
   return (
-    <div className={style.about}>
+    <div className={style.about} id="about">
       <div className={style.lefthalf}>
         <h1 className={style.h1}> Об Ассоциации</h1>
         <p className={style.text}>
