@@ -1,6 +1,5 @@
 import React from 'react'
 
-import style from './News.module.css'
 import Card from './Card'
 
 const NewsComponent = () => {
@@ -28,7 +27,14 @@ const NewsComponent = () => {
   return (
     <div id="news">
       <div /* className="flex justify-center" */>
-        <h2 className={style.text}>Новости Ассоциации</h2>
+        <h2
+          className="text-[#030303] font-[700]
+       mobile:text-[16px] mobile:leading-[24px] mobile:text-center
+       tablet:text-[24px] tablet:leading-[40px]
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start"
+        >
+          Новости Ассоциации
+        </h2>
       </div>
       <div
         className="flex justify-between items-baseline

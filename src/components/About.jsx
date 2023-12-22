@@ -1,7 +1,5 @@
 import React from 'react'
 
-import style from './About.module.css'
-
 export default function AboutComponent() {
   const handleScrollClick = () => {
     // Replace 'targetComponentId' with the actual ID of the target component
@@ -29,7 +27,8 @@ export default function AboutComponent() {
       >
         <h1
           className="text-[#030303] font-[700] mobile:w-[100%] laptop:w-[80%]
-          mobile:leading-[32px] mobile:text-[24px] mobile:text-center
+          mobile:leading-[32px] mobile:text-[16px] mobile:text-center
+          tablet:text-[24px] tablet:leading-[40px]
           laptop:leading-[48px] laptop:text-[32px] laptop:text-start"
         >
           Об Ассоциации
