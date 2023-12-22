@@ -23,14 +23,14 @@ export default function NavComponent() {
     <div
       className="absolute z-10 text-white flex items-center justify-between
       mobile:w-full mobile:pl-[5%] mobile:pt-[2%]
-      laptop:w-full laptop:pl-[14%] laptop:pt-[8%]
+      laptop:w-full laptop:pl-[14%] laptop:pt-[4%]
       " /*mobile:top-[2vh] mobile:left-[6vw]
       laptop:top-[5vh] laptop:left-[5.6vw]*/
     >
       <img
         src="assets/logo.svg"
         alt="logo"
-        className="max-w-[105px] mobile:w-[20%] laptop:w-[100%]"
+        className="max-w-[105px] mobile:w-[10%] laptop:w-[100%]"
       />
 
       <div
@@ -39,7 +39,7 @@ export default function NavComponent() {
         laptop:top-[0vh] laptop:py-0 laptop:text-[26px] laptop:gap-[20px] laptop:w-[75%] laptop:px-[70px]"
       >
         <div
-          className={`flex gap-[20px]
+          className={`flex gap-[1.4vw]
           mobile:absolute mobile:top-[6.5vh] mobile:w-[30%] mobile:items-center mobile:py-4 mobile:right-[0px] mobile:bg-indigo-700
           tablet:top-[11vh] bigtablet:top-[7vh]
           laptop:static laptop:bg-transparent laptop:w-[100%] laptop:items-center laptop:py-0
