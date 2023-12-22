@@ -6,7 +6,7 @@ const Card = ({ imageSrc, name, description, buttontext }) => {
       className="rounded-[24px] overflow-hidden bg-[#f0f0f0] relative flex flex-col p-4
       mobile:w-[70%]
       tablet:w-[50%]
-      laptop:w-[25%]"
+      laptop:w-[30%]"
     >
       <button
         className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]

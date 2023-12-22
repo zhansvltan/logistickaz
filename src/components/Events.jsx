@@ -31,10 +31,10 @@ const EventsComponent = () => {
         <h2 className={style.text}>Мероприятия Ассоциации</h2>
       </div>
       <div
-        className="flex justify-around items-baseline
+        className="flex justify-between items-baseline
       mobile:flex-col mobile:space-y-3 mobile:items-center
       tablet:space-y-6 
-      laptop:flex-row laptop:items-baseline"
+      laptop:flex-row laptop:items-baseline laptop:px-36"
       >
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
