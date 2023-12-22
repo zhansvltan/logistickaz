@@ -25,13 +25,13 @@ const ParksComponent = () => {
   ]
 
   return (
-    <div>
-      <div>
+    <div className="mt-16 mb-16">
+      <div className="mt-8">
         <h2
-          className="text-[#030303] font-[700]
+          className="text-[#030303] font-[700] mb-16
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
-       laptop:text-[32px] laptop:leading-[48px] laptop:text-start"
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
         >
           Индустриальные и логистические парки Ассоциации
         </h2>

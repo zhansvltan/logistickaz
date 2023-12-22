@@ -4,10 +4,10 @@ export default function MembershipComponent() {
   return (
     <div id="mem">
       <h1
-        className="text-[#030303] font-[700]
+        className="text-[#030303] font-[700] mb-8
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
-       laptop:text-[32px] laptop:leading-[48px] laptop:text-start"
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
       >
         Услуги и преимущества членства в Ассоциации
       </h1>

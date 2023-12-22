@@ -15,7 +15,7 @@ export default function AboutComponent() {
   }
   return (
     <div
-      className="flex justify-center
+      className="flex justify-center mt-24 mb-16
       mobile:flex-col mobile:items-center mobile:gap-2
       laptop:flex-row laptop:items-center"
       id="about"

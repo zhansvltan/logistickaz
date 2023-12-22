@@ -15,6 +15,7 @@ const HomePage = () => {
       <ImgComponent />
       <div
         style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}
+        className="mb-11"
       >
         <div
           style={{

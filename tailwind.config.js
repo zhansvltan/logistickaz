@@ -15,6 +15,7 @@ export default {
   content: [
     './index.html',
     './main.jsx',
+    './src/HomePage/HomePage.jsx',
     './src/components/About.jsx',
     './src/components/Card.jsx',
     './src/components/Contact.jsx',
