@@ -7,30 +7,35 @@ const NewsComponent = () => {
   const cardsData = [
     {
       imageSrc: 'assets/news1.svg',
-      name: 'Parks Overview',
-      description: 'Browse different logistics and industrial',
-      buttontext: 'Read more',
+      name: 'Новость №1',
+      description: 'Описание новости',
+      buttontext: 'Читать',
     },
     {
       imageSrc: 'assets/news2.svg',
-      name: 'Media Player',
-      description: 'Watch videos about logistics and',
-      buttontext: 'View details',
+      name: 'Новость №2',
+      description: 'Описание новости',
+      buttontext: 'Читать',
     },
     {
       imageSrc: 'assets/news3.svg',
-      name: 'Contact',
-      description: 'Get in touch with association',
-      buttontext: 'Play video',
+      name: 'Новость №3',
+      description: 'Описание новости',
+      buttontext: 'Читать',
     },
   ]
 
   return (
     <div id="news">
-      <div className={style.section}>
+      <div /* className="flex justify-center" */>
         <h2 className={style.text}>Новости Ассоциации</h2>
       </div>
-      <div className={style.news}>
+      <div
+        className="flex justify-around items-baseline
+      mobile:flex-col mobile:space-y-3 mobile:items-center
+      tablet:space-y-6 
+      laptop:flex-row laptop:items-baseline"
+      >
         {cardsData.map((card, index) => (
           <Card key={index} {...card} />
         ))}
