@@ -1,92 +1,61 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import style from './Navbar.module.css'
-import logo from '../assets/logo.svg'
 
-import MenuIcon from '@mui/icons-material/Menu'
+import { Link } from 'react-router-dom'
+
 export default function NavComponent() {
-  const [open, setOpen] = React.useState(false)
+  const [isMenuOpen, setMenuOpen] = useState(false)
+
   return (
-    <div className={style.nav}>
-      <img src={logo} alt="logo" className={style.img} />
-      <div className={style.links}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: 'none',
-            color: 'white',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          О нас
-        </Link>
-        <Link
-          to="/"
-          style={{ textDecoration: 'none', color: 'white' }}
-          onClick={() => handleScrollClick('mem')}
-        >
-          Услуги
-        </Link>
-        <Link
-          to="/"
-          style={{ textDecoration: 'none', color: 'white' }}
-          onClick={() => handleScrollClick('mem')}
-        >
-          Преимущества
-        </Link>
-        <Link
-          to="/"
-          style={{
-            textDecoration: 'none',
-            color: 'white',
-            marginRight: '50px',
-          }}
-          onClick={() => handleScrollClick('news')}
-        >
+    <div
+      className="absolute z-10 text-white top-[5vh] left-[13.6vw]
+                  flex items-center laptop:gap-[20vw]"
+    >
+      <img src="assets/logo.svg" alt="logo" className="mobile:w-[15%]" />
+
+      <button
+        className="
+          mobile:w-[30px]
+          laptop:hidden"
+        onClick={() => setMenuOpen(!isMenuOpen)}
+      >
+        <img
+          src="assets/burger.svg"
+          className="laptop:hidden"
+          alt="burger menu"
+        />
+      </button>
+
+      <div
+        className={`flex items-center gap-[3vw]
+         ${isMenuOpen ? 'flex-col' : 'hidden laptop:flex'}`}
+      >
+        <Link to="/" onClick={() => handleScrollClick('news')}>
           Новости
         </Link>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        {open && (
-          <div className={style.burger}>
-            <Link to="/">О нас</Link>
-            <Link to="/">Услуги</Link>
-            <Link to="/">Преимущества</Link>
-            <Link to="/">Новости</Link>
-          </div>
-        )}
-        <button className={style.button}>
-          <Link
-            to="/cabinet"
-            style={{
-              textDecoration: 'none',
-              color: 'white',
-            }}
-          >
-            Войти
-          </Link>
+        <Link to="/" onClick={() => handleScrollClick('about')}>
+          О нас
+        </Link>
+        <Link to="/" onClick={() => handleScrollClick('mem')}>
+          Услуги
+        </Link>
+        <Link to="/" onClick={() => handleScrollClick('contact')}>
+          Контакты
+        </Link>
+        <button>
+          <img src="assets/rus.svg" />
         </button>
-        <div className={style.mobile}>
-          <MenuIcon
-            onClick={() => setOpen(!open)}
-            sx={{
-              background: '#5856d6',
-              borderRadius: '50%',
-              marginLeft: '20px',
-              color: 'white',
-              width: '36px',
-              alignItems: 'center',
-              height: '36px',
-              padding: '5px',
-            }}
-          />
-        </div>
+        <button>
+          <img src="assets/eng.svg" />
+        </button>
       </div>
+      <button
+        className="bg-[#5856d6] rounded-3xl font-[600] leading-tight 
+                      mobile:h-[25px] mobile:text-[8px] mobile:w-[14vw]
+                      tablet:h-[40px] tablet:text-[12px]
+                      laptop:h-[45px] laptop:text-[18px] laptop:w-[8vw] laptop:px-2"
+      >
+        <Link to="/">Войти</Link>
+      </button>
     </div>
   )
 }

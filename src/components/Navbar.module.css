@@ -1,8 +1,6 @@
 .nav {
-  padding: 10px;
-  margin-right: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -13,6 +11,20 @@
     gap: 35vw;
   }
 }
+
+.langbuttons {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.lang {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0%;
+  padding: 0%;
+}
+
 .img {
   @media screen and (max-width: 430px) {
     width: 60px;
@@ -24,8 +36,11 @@
   gap: 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 18px;
   color: #ffffff;
+  margin: 0%;
+  padding: 0%;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -41,7 +56,7 @@
   background-color: #5856d6;
   color: #ffffff;
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
 
   @media screen and (max-width: 768px) {
@@ -71,8 +86,5 @@
   @media screen and (max-width: 500px) {
     top: 80px;
     right: 20px;
-  }
-  a {
-    text-decoration: none;
   }
 }

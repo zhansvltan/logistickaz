@@ -8,13 +8,13 @@
   top: 269px;
   color: #ffffff;
   font-size: 48px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   line-height: 62px;
   width: 100%;
   max-width: 587px;
   margin: 0%;
-  padding-left: 100px;
+  padding-left: 196px;
   @media screen and (max-width: 1128px) {
     top: 140px;
     padding-left: 50px;

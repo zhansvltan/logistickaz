@@ -1,29 +1,26 @@
 import React from 'react'
 
 import style from './Parks.module.css'
-import park1 from '../assets/park1.svg'
-import park2 from '../assets/park2.svg'
-import park3 from '../assets/park3.svg'
 import ParkCard from './ParkCard.jsx'
 
 const ParksComponent = () => {
   const cardsData = [
     {
-      imageSrc: park1,
+      imageSrc: 'assets/park1.svg',
       text1: 'Parks',
       name: 'Park Name 1',
       text2: 'Park Name 4',
       date: '13 Jun 2023',
     },
     {
-      imageSrc: park2,
+      imageSrc: 'assets/park2.svg',
       text1: 'Parks',
       name: 'Park Name 2',
       text2: 'Park Name 5',
       date: '13 Jun 2023',
     },
     {
-      imageSrc: park3,
+      imageSrc: 'assets/park3.svg',
       text1: 'Parks',
       name: 'Park Name 3',
       text2: 'Park Name 6',

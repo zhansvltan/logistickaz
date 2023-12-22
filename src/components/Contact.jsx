@@ -1,7 +1,6 @@
 import React from 'react'
 
 import style from './Contact.module.css'
-import mapimg from '../assets/map.svg'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 export default function ContactComponent() {

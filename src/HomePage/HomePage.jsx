@@ -10,7 +10,7 @@ import ContactComponent from '../components/Contact'
 
 const HomePage = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <NavComponent />
       <ImgComponent />
       <div
@@ -34,7 +34,7 @@ const HomePage = () => {
       <MembershipComponent />
       <ParksComponent />
       <ContactComponent />
-    </>
+    </div>
   )
 }
 export default HomePage

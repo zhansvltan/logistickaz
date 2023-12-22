@@ -1,7 +1,6 @@
 import React from 'react'
 
 import style from './About.module.css'
-import aboutimg from '../assets/about.svg'
 
 export default function AboutComponent() {
   const handleScrollClick = () => {
@@ -37,7 +36,7 @@ export default function AboutComponent() {
           <div className={style.divider}></div>
         </div>
       </div>
-      <img src={aboutimg} alt="About" className={style.aboutimg} />
+      <img src="assets/about.svg" alt="About" className={style.aboutimg} />
     </div>
   )
 }
