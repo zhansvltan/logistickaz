@@ -9,12 +9,14 @@ const NewsComponent = () => {
       name: 'Новость №1',
       description: 'Описание новости',
       buttontext: 'Читать',
+      link: 'https://indparks.ru/press/news/aip-rossii-i-assotsiatsiya-industrialnykh-parkov-kazakhstana-reshili-prisoedinitsya-k-mezhdunarodnom/',
     },
     {
       imageSrc: 'assets/news2.svg',
       name: 'Новость №2',
       description: 'Описание новости',
       buttontext: 'Читать',
+      link: 'https://youtube.com',
     },
     {
       imageSrc: 'assets/news3.svg',
