@@ -4,6 +4,20 @@ import { Link } from 'react-router-dom'
 
 export default function NavComponent() {
   const [isMenuOpen, setMenuOpen] = useState(false)
+  const handleScrollClick = (targetId) => {
+    const targetComponent = document.getElementById(targetId)
+
+    if (targetComponent) {
+      const yOffset =
+        targetComponent.getBoundingClientRect().top + window.scrollY
+
+      // Scroll to the target component
+      window.scrollTo({ top: yOffset, behavior: 'smooth' })
+
+      // Close the menu after clicking on a link
+      setMenuOpen(false)
+    }
+  }
 
   return (
     <div
