@@ -1,41 +1,47 @@
 import React from 'react'
 
-import style from './Parks.module.css'
 import ParkCard from './ParkCard.jsx'
 
 const ParksComponent = () => {
   const cardsData = [
     {
       imageSrc: 'assets/park1.svg',
-      text1: 'Parks',
-      name: 'Park Name 1',
-      text2: 'Park Name 4',
-      date: '13 Jun 2023',
+      text1: 'Индустриальный парк',
+      name: 'Название парка №1',
+      text2: 'Компания №1',
     },
     {
       imageSrc: 'assets/park2.svg',
-      text1: 'Parks',
-      name: 'Park Name 2',
-      text2: 'Park Name 5',
-      date: '13 Jun 2023',
+      text1: 'Логистический парк',
+      name: 'Название парка №2',
+      text2: 'Компания №2',
     },
     {
       imageSrc: 'assets/park3.svg',
-      text1: 'Parks',
-      name: 'Park Name 3',
-      text2: 'Park Name 6',
-      date: '13 Jun 2023',
+      text1: 'Индустриальный парк',
+      name: 'Название парка №3',
+      text2: 'Компания №3',
     },
   ]
 
   return (
     <div>
-      <div className={style.section}>
-        <h2 className={style.h2}>
+      <div>
+        <h2
+          className="text-[#030303] font-[700]
+       mobile:text-[16px] mobile:leading-[24px] mobile:text-center
+       tablet:text-[24px] tablet:leading-[40px]
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start"
+        >
           Индустриальные и логистические парки Ассоциации
         </h2>
       </div>
-      <div className={style.parks}>
+      <div
+        className="flex justify-between items-baseline
+      mobile:flex-col mobile:space-y-3 mobile:items-center
+      tablet:space-y-6 
+      laptop:flex-row laptop:items-baseline laptop:px-44"
+      >
         {cardsData.map((card, index) => (
           <ParkCard key={index} {...card} />
         ))}

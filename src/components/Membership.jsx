@@ -1,7 +1,5 @@
 import React from 'react'
 
-import style from './Membership.module.css'
-
 export default function MembershipComponent() {
   return (
     <div id="mem">

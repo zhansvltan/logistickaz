@@ -26,7 +26,7 @@ const NewsComponent = () => {
 
   return (
     <div id="news">
-      <div /* className="flex justify-center" */>
+      <div>
         <h2
           className="text-[#030303] font-[700]
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center

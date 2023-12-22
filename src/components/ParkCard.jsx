@@ -1,17 +1,27 @@
 import React from 'react'
 
-import style from './ParkCard.module.css'
-
-const ParkCard = ({ imageSrc, text1, name, text2, date }) => {
+const ParkCard = ({ imageSrc, text1, name, text2 }) => {
   return (
-    <div className={style.parkcard}>
-      <img src={imageSrc} alt={name} className={style.img} />
-      <p className={style.text1}>{text1}</p>
-      <h2 className={style.h2}>{name}</h2>
-      <div className={style.low}>
-        <p className={style.text2}>{text2}</p>
-        <p className={style.date}>{date}</p>
-      </div>
+    <div className="flex flex-col">
+      <img src={imageSrc} alt={name} className="justify-center mb-4" />
+      <p
+        className="justify-start text-[#030303] font-[700]
+      laptop:text-[16px] laptop:leading-[22px] mb-5 pl-2"
+      >
+        {text1}
+      </p>
+      <h2
+        className="justify-start text-[#030303] font-[900]
+      laptop:text-[24px] laptop:leading-[32px] mb-16 pl-2"
+      >
+        {name}
+      </h2>
+      <p
+        className="justify-start text-[#030303] font-[700]
+      laptop:text-[14px] laptop:leading-[18px] pl-2"
+      >
+        {text2}
+      </p>
     </div>
   )
 }
