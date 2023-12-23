@@ -48,18 +48,18 @@ export default function ContactComponent() {
       <div className={style.box}>
         <div className={style.subsection}>
           <h3 className={style.contacth3}>Позвоните нам</h3>
-          <p className={style.contacttext}>+ 123 456 789 101</p>
-          <p className={style.contacttext}>+ 235 456 789 101</p>
+          <p className={style.contacttext}>+7 777 77 77</p>
+          <p className={style.contacttext}>+7 777 77 77</p>
         </div>
         <div className={style.subsection}>
           <h3 className={style.contacth3}>Напишите нам</h3>
-          <p className={style.contacttext}>info@association.com</p>
-          <p className={style.contacttext}>hello@association.com</p>
+          <p className={style.contacttext}>info@alip.kz</p>
         </div>
         <div className={style.subsection}>
           <h3 className={style.contacth3}>Посетите нас</h3>
-          <p className={style.contacttext}>123 Main Street</p>
-          <p className={style.contacttext}>Astana, Kazakhstan</p>
+          <p className={style.contacttext}>г. Астана, район Есиль,</p>
+          <p className={style.contacttext}>проспект Мангилик Ел,</p>
+          <p className={style.contacttext}>здание 55/23</p>
         </div>
       </div>
     </div>
