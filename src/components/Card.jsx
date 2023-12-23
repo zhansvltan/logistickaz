@@ -6,9 +6,7 @@ const Card = ({ imageSrc, name, description, buttontext, link }) => {
   return (
     <div
       className="rounded-[24px] overflow-hidden bg-[#f0f0f0] relative flex flex-col p-4
-      mobile:w-[70%]
-      tablet:w-[50%]
-      laptop:w-[30%]"
+   w-[300px] h-[300px] mb-4"
     >
       <Link to={link}>
         <button

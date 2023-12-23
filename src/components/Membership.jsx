@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MembershipComponent() {
   return (
-    <div id="mem">
+    <div id="mem" className="mobile: px-4">
       <h1
         className="text-[#030303] font-[700] mb-8
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center

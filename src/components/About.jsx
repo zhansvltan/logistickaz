@@ -15,13 +15,13 @@ export default function AboutComponent() {
   }
   return (
     <div
-      className="flex justify-center mt-24 mb-16
+      className="flex justify-center mb-16
       mobile:flex-col mobile:items-center mobile:gap-2
       laptop:flex-row laptop:items-center"
       id="about"
     >
       <div
-        className="flex flex-col
+        className="flex flex-col mb-3
         mobile:gap-2 mobile:w-[60%] mobile:items-center 
         laptop:gap-4 laptop:w-[34%] laptop:items-start"
       >
@@ -62,7 +62,7 @@ export default function AboutComponent() {
       <img
         src="assets/about.svg"
         alt="About"
-        className="mobile:w-[70%] mobile:rounded-3xl tablet:w-[60%] laptop:w-[46%] laptop:rounded-[0px]"
+        className="mobile:w-[70%] mobile:rounded-3xl tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px]"
       />
     </div>
   )

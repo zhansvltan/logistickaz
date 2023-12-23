@@ -10,7 +10,7 @@ export default function ContactComponent() {
       <h3 className={style.h3}>
         Свяжитесь с нами по любым интересующим Вас вопросам
       </h3>
-      <div className={style.main}>
+      <div className={`${style.main} laptop:gap-[40px]`}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <p className={style.text}>Ваше ФИО</p>
           <input type="text" placeholder="ФИО" className={style.input} />

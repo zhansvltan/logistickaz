@@ -31,19 +31,21 @@ const ParksComponent = () => {
           className="text-[#030303] font-[700] mb-16
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
-       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[9vw]"
         >
           Индустриальные и логистические парки Ассоциации
         </h2>
       </div>
       <div
-        className="flex justify-between items-baseline
-      mobile:flex-col mobile:space-y-3 mobile:items-center
-      tablet:space-y-6 
-      laptop:flex-row laptop:items-baseline laptop:px-44"
+        className="flex justify-between items-baseline flex-wrap
+          mobile:gap-[10px] mobile:px-4 mobile:justify-center
+          tablet:gap-[20px] tablet:px-2 tablet:justify-center
+          laptop:gap-[30px]  laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
       >
         {cardsData.map((card, index) => (
-          <ParkCard key={index} {...card} />
+          <div key={index} className="w-full mobile:w-auto mb-4 laptop:mb-0">
+            <ParkCard key={index} {...card} />
+          </div>
         ))}
       </div>
     </div>
