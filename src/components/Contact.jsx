@@ -55,7 +55,10 @@ export default function ContactComponent() {
           <h3 className={style.contacth3}>Напишите нам</h3>
           <p className={style.contacttext}>info@alip.kz</p>
         </div>
-        <div className={style.subsection}>
+        <div
+          className={`${style.subsection} laptop: pl-[3.4vw] mobile:pl-[20px]
+        `}
+        >
           <h3 className={style.contacth3}>Посетите нас</h3>
           <p className={style.contacttext}>г. Астана, район Есиль,</p>
           <p className={style.contacttext}>проспект Мангилик Ел,</p>

@@ -12,8 +12,8 @@ const Card = ({ imageSrc, name, description, buttontext, link }) => {
         <button
           className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
       absolute right-[24px] top-[24px]
-      mobile:h-[30px] mobile:w-[70px] mobile:text-[10px]
-      laptop:h-[40px] laptop:w-[120px] laptop:text-[14px]"
+      mobile:h-[30px] mobile:w-[70px] mobile:text-[14px]
+      laptop:h-[40px] laptop:w-[120px] laptop:text-[16px]"
         >
           {buttontext}
         </button>
@@ -21,7 +21,7 @@ const Card = ({ imageSrc, name, description, buttontext, link }) => {
       <img src={imageSrc} alt={name} className="justify-center mb-4" />
       <h2
         className="justify-start text-[#030303] font-[600] pl-2
-      laptop:text-[22px] laptop:leading-[32px]"
+      laptop:text-[16px] laptop:leading-[32px] mobile:text-[14px] mobile:leading-[22px]"
       >
         {name}
       </h2>

@@ -5,7 +5,7 @@ export default function MembershipComponent() {
     <div id="mem" className="mobile: px-4">
       <h1
         className="text-[#030303] font-[700] mb-8
-       mobile:text-[16px] mobile:leading-[24px] mobile:text-center
+       mobile:text-[14px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
        laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
       >
@@ -30,7 +30,7 @@ export default function MembershipComponent() {
           />
           <h2
             className="text-[#030303] font-[600] 
-          mobile:leading-[20px] mobile:text-[16px] 
+          mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
             Связь с государством
@@ -44,7 +44,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-        mobile:text-center 
+        mobile:text-center  mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
           Оперативный диалог с государством по вопросу регулирования отрасли и
@@ -53,12 +53,12 @@ export default function MembershipComponent() {
       </div>
       <div
         className="flex justify-center items-center 
-      mobile:flex-col mobile:space-y-4 mobile:mb-4 
+      mobile:flex-col mobile:space-y-4 mobile:mb-4  mobile:text-[14px] 
       laptop:space-y-0 laptop:flex-row laptop:gap-[6vw] laptop:mb-24"
       >
         <p
           className="text-[#030303] font-[500] 
-        mobile:hidden mobile:text-center 
+        mobile:hidden mobile:text-center   mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%] laptop:block"
         >
           Коллективный маркетинг и прямой доступ к запросам на размещение
@@ -78,7 +78,7 @@ export default function MembershipComponent() {
           />
           <h2
             className="text-[#030303] font-[600] 
-          mobile:leading-[20px] mobile:text-[16px] 
+          mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
             Продвижение и маркетинг
@@ -92,7 +92,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-        mobile:block mobile:text-center 
+        mobile:block mobile:text-center  mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%] laptop:hidden"
         >
           Коллективный маркетинг и прямой доступ к запросам на размещение
@@ -113,7 +113,7 @@ export default function MembershipComponent() {
           />
           <h2
             className="text-[#030303] font-[600] 
-          mobile:leading-[20px] mobile:text-[16px] 
+          mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
             Расширение партнерства
@@ -127,7 +127,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-          mobile:text-center 
+          mobile:text-center  mobile:text-[14px] 
           laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
           Расширение партнерской сети и прямой доступ к запросам от инвесторов
