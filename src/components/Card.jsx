@@ -6,7 +6,7 @@ const Card = ({ imageSrc, name, buttontext, link }) => {
   return (
     <div
       className="rounded-[24px] overflow-hidden bg-[#f0f0f0] relative flex flex-col p-4
-    mobile:max-w-[90%] mobile:mx-auto  mobile:px-4 mobile:h-[100%]
+    mobile:max-w-[100%] mobile:mx-auto  mobile:px-4 mobile:h-[100%]
     tablet:max-w-[40%] tablet:mx-auto tablet:mb-8 tablet:px-4
     laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-0
     "
