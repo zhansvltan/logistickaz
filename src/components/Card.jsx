@@ -12,7 +12,7 @@ const Card = ({ imageSrc, name, description, buttontext, link }) => {
         <button
           className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
       absolute right-[24px] top-[24px]
-      mobile:h-[30px] mobile:w-[70px] mobile:text-[14px]
+      mobile:h-[30px] mobile:w-[100px] mobile:text-[14px]
       laptop:h-[40px] laptop:w-[120px] laptop:text-[16px]"
         >
           {buttontext}
