@@ -6,7 +6,7 @@ const NewsComponent = () => {
   const cardsData = [
     {
       imageSrc: 'assets/news1.svg',
-      name: 'Новость №1',
+      name: 'АИП России и Ассоциация индустриальных парков Казахстана решили присоединиться к международному Альянсу промышленных зон',
       buttontext: 'Читать',
       link: 'https://indparks.ru/press/news/aip-rossii-i-assotsiatsiya-industrialnykh-parkov-kazakhstana-reshili-prisoedinitsya-k-mezhdunarodnom/',
     },
