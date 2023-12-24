@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Card from './NewsCard'
 
 const NewsComponent = () => {
+  const [open, setOpen] = React.useState(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
   const cardsData = [
     {
       imageSrc: 'assets/news1.jpeg',

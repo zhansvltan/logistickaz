@@ -1,5 +1,23 @@
 import React, { useState } from 'react'
-
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import Modal from '@mui/material/Modal'
+import CancelIcon from '@mui/icons-material/Cancel'
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '80%',
+  bgcolor: 'background.paper',
+  border: '1px solid #000',
+  boxShadow: 24,
+  borderRadius: '10px',
+  p: 4,
+  overflow: 'scroll',
+  height: '80%',
+}
 const Popup = ({ description, onClose }) => {
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white bg-opacity-90">
@@ -18,7 +36,9 @@ const Popup = ({ description, onClose }) => {
 
 const Card = ({ imageSrc, name, buttontext, description }) => {
   const [isPopupVisible, setPopupVisible] = useState(false)
-
+  const [open, setOpen] = React.useState(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
   const openPopup = () => {
     setPopupVisible(true)
   }
@@ -43,7 +63,7 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
         absolute mobile:right-[24px] laptop:right-[12px] top-[24px]
         mobile:h-[30px] mobile:w-[90px] mobile:text-[10px]
         laptop:h-[40px] laptop:w-[120px] laptop:text-[16px]"
-        onClick={openPopup}
+        onClick={handleOpen}
       >
         {buttontext}
       </button>
@@ -59,6 +79,36 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
       >
         {name}
       </h2>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+            }}
+          >
+            Text in a modal{' '}
+            <CancelIcon
+              sx={{
+                position: 'absolute',
+                right: '10px',
+              }}
+              onClick={handleClose}
+            />
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            {description}
+          </Typography>
+        </Box>
+      </Modal>
     </div>
   )
 }
