@@ -53,7 +53,7 @@ export default function ContactComponent() {
           <p className={style.contacttext}>info@alip.kz</p>
         </div>
         <div
-          className={`${style.subsection} laptop: pl-[3.4vw] mobile:pl-[20px]
+          className={`${style.subsection}
         `}
         >
           <h3 className={style.contacth3}>Посетите нас</h3>
