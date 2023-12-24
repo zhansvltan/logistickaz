@@ -28,7 +28,7 @@ const CabinetPage = () => {
     <div className="flex overflow-hidden">
       <div
         id="sidebar"
-        className="flex-col justify-around bg-[#f0f0f0] rounded-[24px] laptop:w-[200px] min-h-[100vh] text-[18px]"
+        className="flex-col justify-around bg-[#f0f0f0] rounded-[24px] mobile:hidden laptop:block laptop:w-[200px] laptop:min-h-[100vh] text-[18px]"
       >
         <div className="flex-col h-[88%]" id="top side">
           <div className="pt-8  pl-8">
@@ -105,8 +105,8 @@ const CabinetPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-[13vh] w-[85%]">
-        <div className="flex gap-[27vw] items-center pt-8 px-8">
+      <div className="flex flex-col  gap-[13vh] w-[85%]">
+        <div className="flex gap-[27vw] items-center pt-8 px-8 ">
           <p className="text-[20px] text-[#030303] font-[600] leading-[32px] w-[10%]">
             Главная
           </p>

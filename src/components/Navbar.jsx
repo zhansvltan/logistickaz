@@ -86,7 +86,7 @@ export default function NavComponent() {
           mobile:h-[30px] mobile:text-[10px] mobile:w-[11vw]
           laptop:w-[8vw] laptop:h-[45px] laptop:text-[18px]"
           >
-            <Link to="/">Войти</Link>
+            <Link to="/cabinet">Войти</Link>
           </button>
         </div>
       </div>

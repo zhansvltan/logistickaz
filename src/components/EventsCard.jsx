@@ -30,7 +30,7 @@ const Card = ({ imageSrc, name, buttontext, link, description }) => {
       <h2
         className="text-[#030303] font-[600] pl-2 mb-16
         mobile:text-justify mobile:text-[14px] mobile:leading-[22px]
-        laptop:text-justify laptop:text-[16px] laptop:leading-[32px]"
+        laptop:text-start laptop:text-[16px] laptop:leading-[32px]"
       >
         {name}
       </h2>
