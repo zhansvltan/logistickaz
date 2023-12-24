@@ -34,7 +34,7 @@ const CabinetPage = () => {
     <div className="flex overflow-hidden mobile:justify-center laptop:justify-start">
       <div
         id="sidebar"
-        className={`flex-col justify-around bg-[#f0f0f0] rounded-[24px] ${
+        className={`flex-col justify-around bg-[#f0f0f0] laptop:rounded-[24px] ${
           isSidebarOpen
             ? 'mobile:block mobile:absolute mobile:left-0 mobile:pt-[20%] mobile:w-[170px] mobile:h-[100%]'
             : 'mobile:hidden'
