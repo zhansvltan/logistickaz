@@ -37,10 +37,10 @@ const EventsComponent = () => {
         </h2>
       </div>
       <div
-        className="flex justify-between items-baseline flex-wrap
-        mobile:gap-[10px] mobile:justify-center
-        tablet:gap-[20px] tablet:justify-center
-        laptop:gap-[30px] laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
+        className="flex justify-between items-baseline
+     mobile:gap-[10px] mobile:justify-center mobile:flex-wrap
+     tablet:gap-[20px] tablet:justify-center tablet:flex-wrap 
+     laptop:gap-[30px] laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
       >
         {cardsData.map((card, index) => (
           <div

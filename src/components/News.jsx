@@ -12,14 +12,15 @@ const NewsComponent = () => {
     },
     {
       imageSrc: 'assets/news2.svg',
-      name: 'Новость №2',
+      name: 'АИП России и Ассоциация индустриальнниться к международному Альянсу промышленных зон',
       buttontext: 'Читать',
-      link: 'https://youtube.com',
+      link: 'https://indparks.ru/press/news/aip-rossii-i-assotsiatsiya-industrialnykh-parkov-kazakhstana-reshili-prisoedinitsya-k-mezhdunarodnom/',
     },
     {
       imageSrc: 'assets/news3.svg',
-      name: 'Новость №3',
+      name: 'АИП России и Ассоциация индустриальных парков Казахстана решили присоединиться к международному Альянсу промышленных зон',
       buttontext: 'Читать',
+      link: 'https://indparks.ru/press/news/aip-rossii-i-assotsiatsiya-industrialnykh-parkov-kazakhstana-reshili-prisoedinitsya-k-mezhdunarodnom/',
     },
   ]
 
@@ -36,15 +37,15 @@ const NewsComponent = () => {
         </h2>
       </div>
       <div
-        className="flex justify-between items-baseline flex-wrap
-        mobile:gap-[10px] mobile:justify-center
-        tablet:gap-[20px] tablet:justify-center
+        className="flex justify-between items-baseline
+        mobile:gap-[10px] mobile:justify-center mobile:flex-wrap
+        tablet:gap-[20px] tablet:justify-center tablet:flex-wrap 
         laptop:gap-[30px] laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
       >
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="mobile:w-[75%] laptop:w-[auto] mb-4 laptop:mb-0"
+            className="mobile:w-[75%] laptop:w-[auto] mb-4 laptop:mb-0 flex-wrap"
           >
             <Card key={index} {...card} />
           </div>
