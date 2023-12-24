@@ -100,7 +100,7 @@ const NewsComponent = () => {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="mobile:w-[75%] mobile:mb-4 laptop:w-[auto] laptop:mb-0 flex-wrap laptop:flex-row bg-[#f0f0f0] rounded-[24px]"
+            className="mobile:w-[75%] mobile:mb-4 laptop:w-[auto] laptop:mb-0  laptop:flex-row bg-[#f0f0f0] rounded-[24px]"
           >
             <Card key={index} {...card} openPopup={() => openPopup(card)} />
           </div>
