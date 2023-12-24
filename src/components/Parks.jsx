@@ -29,9 +29,9 @@ const ParksComponent = () => {
       <div>
         <h2
           className="text-[#030303] font-[700] mobile:mb-4 laptop:mb-8
-       mobile:text-[18px] mobile:leading-[24px] mobile:text-center
+       mobile:text-[18px] mobile:leading-[24px] mobile:text-center mobile:px-10
        tablet:text-[24px] tablet:leading-[40px]
-       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:px-0 laptop:pl-[12vw]"
         >
           Индустриальные и логистические парки Ассоциации
         </h2>

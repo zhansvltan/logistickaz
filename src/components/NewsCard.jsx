@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
-const Card = ({ imageSrc, name, buttontext, link, description }) => {
+const Card = ({ imageSrc, name, buttontext, description }) => {
   return (
     <div
       className="overflow-hidden  relative flex-col p-4
@@ -11,17 +9,15 @@ const Card = ({ imageSrc, name, buttontext, link, description }) => {
     laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2
     "
     >
-      <Link to={link}>
-        <button
-          className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
+      <button
+        className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
       absolute mobile:right-[24px] laptop:right-[12px]
       top-[24px]
       mobile:h-[30px] mobile:w-[90px] mobile:text-[10px]
       laptop:h-[40px] laptop:w-[120px] laptop:text-[16px]"
-        >
-          {buttontext}
-        </button>
-      </Link>
+      >
+        {buttontext}
+      </button>
       <img
         src={imageSrc}
         alt={name}
