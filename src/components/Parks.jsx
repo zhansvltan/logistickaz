@@ -26,26 +26,26 @@ const ParksComponent = () => {
 
   return (
     <div className="mt-16 mb-16">
-      <div className="mt-8">
+      <div>
         <h2
-          className="text-[#030303] font-[700] mb-16
+          className="text-[#030303] font-[700] mobile:mb-4 laptop:mb-8
        mobile:text-[18px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
-       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[9vw]"
+       laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"
         >
           Индустриальные и логистические парки Ассоциации
         </h2>
       </div>
       <div
-        className="flex justify-between items-baseline flex-wrap
-          mobile:gap-[10px] mobile:justify-center
+        className="flex justify-between items-baseline
+          mobile:gap-[10px] mobile:justify-center mobile:flex-col mobile:items-center
           tablet:gap-[20px] tablet:justify-center
-          laptop:gap-[30px]  laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
+          laptop:gap-[30px]  laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%] laptop:flex-row"
       >
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="mobile:w-[75%] laptop:w-[auto] mb-4 laptop:mb-0"
+            className="mobile:w-[75%] laptop:w-[auto] mb-4 laptop:mb-0 laptop:px-10"
           >
             <ParkCard key={index} {...card} />
           </div>

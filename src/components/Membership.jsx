@@ -4,7 +4,7 @@ export default function MembershipComponent() {
   return (
     <div id="mem" className="">
       <h1
-        className="text-[#030303] font-[700] mb-8
+        className="text-[#030303] font-[700] mobile:mt-8 mobile:mb-4 laptop:mt-16 laptop:mb-8
        mobile:text-[18px] mobile:leading-[24px] mobile:text-center
        tablet:text-[24px] tablet:leading-[40px]
        laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[12vw]"

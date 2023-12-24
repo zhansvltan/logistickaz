@@ -15,7 +15,7 @@ const HomePage = () => {
       <ImgComponent />
       <div
         style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}
-        className="mb-11"
+        className="mobile:hidden laptop:block mb-11"
       >
         <div
           style={{
@@ -27,6 +27,7 @@ const HomePage = () => {
             margin: '0%',
             padding: '0%',
           }}
+          className="mobile:hidden laptop:block mobile:mb-6 laptop:mb-11"
         ></div>
       </div>
       <NewsComponent />
