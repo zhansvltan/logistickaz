@@ -83,7 +83,7 @@ export default function NavComponent() {
           </button>
           <button
             className="bg-[#5856d6] rounded-3xl font-[600] leading-tight
-          mobile:h-[30px] mobile:text-[8px] mobile:w-[11vw]
+          mobile:h-[30px] mobile:text-[10px] mobile:w-[11vw]
           laptop:w-[8vw] laptop:h-[45px] laptop:text-[18px]"
           >
             <Link to="/">Войти</Link>
