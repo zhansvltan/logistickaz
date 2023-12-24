@@ -6,9 +6,9 @@ const Card = ({ imageSrc, name, buttontext, link, description }) => {
   return (
     <div
       className="overflow-hidden  relative flex-col p-4
-    mobile:max-w-[100%] mobile:mx-auto  mobile:px-4
+    mobile:max-w-[100%] mobile:mx-auto  mobile:px-4 mobile:h-[22rem]
     tablet:max-w-[40%] tablet:mx-auto tablet:mb-8 tablet:px-4
-    laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2
+    laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2 laptop:h-[auto]
     "
     >
       <Link to={link}>

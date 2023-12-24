@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal from '@mui/material/Modal'
@@ -15,11 +15,10 @@ const style = {
   borderRadius: '10px',
   p: 4,
   overflow: 'scroll',
-  height: '80%',
+  height: '25rem',
 }
 
 const Card = ({ imageSrc, name, buttontext, description }) => {
-  const [isPopupVisible, setPopupVisible] = useState(false)
   const [open, setOpen] = React.useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -27,9 +26,9 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
   return (
     <div
       className="overflow-hidden relative flex-col p-4
-      mobile:max-w-[100%] mobile:mx-auto mobile:px-4
+      mobile:max-w-[100%] mobile:mx-auto mobile:px-4 mobile:h-[22rem]
       tablet:max-w-[40%] tablet:mx-auto tablet:mb-8 tablet:px-4
-      laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2"
+      laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2 laptop:h-auto"
     >
       <button
         className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
@@ -72,6 +71,7 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
               sx={{
                 position: 'absolute',
                 right: '10px',
+                cursor: 'pointer',
               }}
               onClick={handleClose}
             />
