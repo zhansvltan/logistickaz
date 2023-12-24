@@ -17,7 +17,8 @@ const Card = ({ imageSrc, name, buttontext, link }) => {
       </Link>
       <img src={imageSrc} alt={name} className="justify-center mb-4" />
       <h2
-        className="justify-start text-[#030303] font-[600] pl-2
+        className="justify-start text-[#030303] font-[600] pl-2 mobile:text-justify
+        laptop:text-start
       laptop:text-[16px] laptop:leading-[32px] mobile:text-[14px] mobile:leading-[22px]"
       >
         {name}
