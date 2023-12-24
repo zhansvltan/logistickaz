@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MembershipComponent() {
   return (
-    <div id="mem" className="mobile: px-4">
+    <div id="mem" className="">
       <h1
         className="text-[#030303] font-[700] mb-8
        mobile:text-[16px] mobile:leading-[24px] mobile:text-center
@@ -18,7 +18,7 @@ export default function MembershipComponent() {
       >
         <div
           className="flex justify-around items-center bg-[#f0f0f0] rounded-3xl p-4 
-        mobile:h-[64px] mobile:w-[60%] 
+        mobile:h-[64px] mobile:w-[75%] 
         tablet:w-[35%]
         laptop:h-[128px] laptop:w-[30%]"
         >
@@ -44,7 +44,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-        mobile:text-center  mobile:text-[14px] 
+        mobile:text-justify mobile:w-[75%]  mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
           Оперативный диалог с государством по вопросу регулирования отрасли и
@@ -66,7 +66,7 @@ export default function MembershipComponent() {
         </p>
         <div
           className="flex justify-around items-center bg-[#f0f0f0] rounded-3xl p-4 
-        mobile:h-[64px] mobile:w-[60%] 
+        mobile:h-[64px] mobile:w-[75%] 
         tablet:w-[35%] 
         laptop:h-[128px] laptop:w-[30%]"
         >
@@ -92,7 +92,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-        mobile:block mobile:text-center  mobile:text-[14px] 
+        mobile:block mobile:text-justify mobile:w-[75%] mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%] laptop:hidden"
         >
           Коллективный маркетинг и прямой доступ к запросам на размещение
@@ -102,7 +102,7 @@ export default function MembershipComponent() {
       <div className="flex justify-center items-center mobile:flex-col mobile:space-y-4 mobile:mb-4 laptop:space-y-0 laptop:flex-row laptop:gap-[6vw]">
         <div
           className="flex justify-around items-center bg-[#f0f0f0] rounded-3xl p-4 
-        mobile:h-[64px] mobile:w-[60%] tablet:w-[35%] 
+        mobile:h-[64px] mobile:w-[75%] tablet:w-[35%] 
         laptop:h-[128px] laptop:w-[30%]"
         >
           <img
@@ -127,7 +127,7 @@ export default function MembershipComponent() {
         </div>
         <p
           className="text-[#030303] font-[500] 
-          mobile:text-center  mobile:text-[14px] 
+          mobile:text-justify mobile:w-[75%]  mobile:text-[14px] 
           laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
           Расширение партнерской сети и прямой доступ к запросам от инвесторов

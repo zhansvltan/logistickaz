@@ -22,7 +22,7 @@ export default function AboutComponent() {
     >
       <div
         className="flex flex-col mb-3
-        mobile:gap-2 mobile:w-[60%] mobile:items-center 
+        mobile:gap-2 mobile:w-[75%] mobile:items-center 
         laptop:gap-4 laptop:w-[34%] laptop:items-start"
       >
         <h1
@@ -35,7 +35,7 @@ export default function AboutComponent() {
         </h1>
         <p
           className="text-[#000000] m-0 p-0 
-          mobile:text-center  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
+          mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
           laptop:text-start laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
         >
@@ -62,7 +62,7 @@ export default function AboutComponent() {
       <img
         src="assets/about.svg"
         alt="About"
-        className="mobile:w-[70%] mobile:rounded-3xl tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px]"
+        className="mobile:w-[75%] mobile:rounded-3xl tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px]"
       />
     </div>
   )

@@ -7,21 +7,18 @@ const NewsComponent = () => {
     {
       imageSrc: 'assets/news1.svg',
       name: 'Новость №1',
-      description: 'Описание новости',
       buttontext: 'Читать',
       link: 'https://indparks.ru/press/news/aip-rossii-i-assotsiatsiya-industrialnykh-parkov-kazakhstana-reshili-prisoedinitsya-k-mezhdunarodnom/',
     },
     {
       imageSrc: 'assets/news2.svg',
       name: 'Новость №2',
-      description: 'Описание новости',
       buttontext: 'Читать',
       link: 'https://youtube.com',
     },
     {
       imageSrc: 'assets/news3.svg',
       name: 'Новость №3',
-      description: 'Описание новости',
       buttontext: 'Читать',
     },
   ]
@@ -40,12 +37,15 @@ const NewsComponent = () => {
       </div>
       <div
         className="flex justify-between items-baseline flex-wrap
-        mobile:gap-[10px] mobile:px-4 mobile:justify-center
-        tablet:gap-[20px] tablet:px-2 tablet:justify-center
-        laptop:gap-[30px]  laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
+        mobile:gap-[10px] mobile:justify-center
+        tablet:gap-[20px] tablet:justify-center
+        laptop:gap-[30px] laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%]"
       >
         {cardsData.map((card, index) => (
-          <div key={index} className="w-full mobile:w-auto mb-4 laptop:mb-0">
+          <div
+            key={index}
+            className="mobile:w-[75%] laptop:w-[auto] mb-4 laptop:mb-0"
+          >
             <Card key={index} {...card} />
           </div>
         ))}

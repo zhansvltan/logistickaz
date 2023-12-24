@@ -2,17 +2,14 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-const Card = ({ imageSrc, name, description, buttontext, link }) => {
+const Card = ({ imageSrc, name, buttontext, link }) => {
   return (
-    <div
-      className="rounded-[24px] overflow-hidden bg-[#f0f0f0] relative flex flex-col p-4
-   w-[300px] h-[300px] mb-4"
-    >
+    <div className="rounded-[24px] overflow-hidden bg-[#f0f0f0] relative flex flex-col h-[300px] p-4 mb-4">
       <Link to={link}>
         <button
           className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
       absolute right-[24px] top-[24px]
-      mobile:h-[30px] mobile:w-[100px] mobile:text-[14px]
+      mobile:h-[30px] mobile:w-[90px] mobile:text-[10px]
       laptop:h-[40px] laptop:w-[120px] laptop:text-[16px]"
         >
           {buttontext}
@@ -25,12 +22,12 @@ const Card = ({ imageSrc, name, description, buttontext, link }) => {
       >
         {name}
       </h2>
-      <p
+      {/* <p
         className="justify-start text-[#030303]
       laptop:text-[14px] laptop:leading-[22px] mb-16 pl-2"
       >
         {description}
-      </p>
+      </p> */}
     </div>
   )
 }

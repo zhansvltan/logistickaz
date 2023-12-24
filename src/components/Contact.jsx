@@ -1,8 +1,6 @@
 import React from 'react'
 
 import style from './Contact.module.css'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
 export default function ContactComponent() {
   return (
     <div className={style.container} id="contact">
@@ -34,16 +32,15 @@ export default function ContactComponent() {
           />
           <button className={style.button}>Отправить</button>
         </div>
-        <MapContainer
-          center={[51.505, -0.09]}
-          zoom={13}
-          style={{ height: '445px', width: '100%' }}
-        >
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>A marker example.</Popup>
-          </Marker>
-        </MapContainer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.043025332603!2d71.41677177689787!3d51.089213471721266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585ab1a2fc967%3A0x29a4bb7370d5dfae!2sProspekt%20Mangilik%20Yel.%2055%2C%20Astana%20020000!5e0!3m2!1sen!2skz!4v1703419267507!5m2!1sen!2skz"
+          width="100%"
+          height="445"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
       <div className={style.box}>
         <div className={style.subsection}>
