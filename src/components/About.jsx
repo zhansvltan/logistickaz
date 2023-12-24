@@ -27,12 +27,17 @@ export default function AboutComponent() {
       >
         <h1
           className="text-[#030303] font-[700] mobile:w-[100%] laptop:w-[80%]
-          mobile:leading-[32px] mobile:text-[16px] mobile:text-center
+          mobile:leading-[32px] mobile:text-[18px] mobile:text-center
           tablet:text-[24px] tablet:leading-[40px]
           laptop:leading-[48px] laptop:text-[32px] laptop:text-start"
         >
           Об Ассоциации
         </h1>
+        <img
+          src="assets/about.svg"
+          alt="About"
+          className="mobile:w-[100%] mobile:rounded-3xl mobile:block mobile:mb-2 tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px] laptop:hidden"
+        />
         <p
           className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
@@ -62,7 +67,7 @@ export default function AboutComponent() {
       <img
         src="assets/about.svg"
         alt="About"
-        className="mobile:w-[75%] mobile:rounded-3xl tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px]"
+        className="mobile:w-[75%] mobile:rounded-3xl mobile:hidden tablet:w-[60%] laptop:w-[46%] laptop:rounded-[40px] laptop:block"
       />
     </div>
   )
