@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Modal from '@mui/material/Modal'
 import CancelIcon from '@mui/icons-material/Cancel'
@@ -18,34 +17,12 @@ const style = {
   overflow: 'scroll',
   height: '80%',
 }
-const Popup = ({ description, onClose }) => {
-  return (
-    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white bg-opacity-90">
-      <div className="bg-white rounded-lg p-6">
-        <p>{description}</p>
-        <button
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          onClick={onClose}
-        >
-          Закрыть
-        </button>
-      </div>
-    </div>
-  )
-}
 
 const Card = ({ imageSrc, name, buttontext, description }) => {
   const [isPopupVisible, setPopupVisible] = useState(false)
   const [open, setOpen] = React.useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
-  const openPopup = () => {
-    setPopupVisible(true)
-  }
-
-  const closePopup = () => {
-    setPopupVisible(false)
-  }
 
   return (
     <div
@@ -54,10 +31,6 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
       tablet:max-w-[40%] tablet:mx-auto tablet:mb-8 tablet:px-4
       laptop:max-w-[300px] laptop:mx-0 laptop:mb-0 laptop:px-2"
     >
-      {/* Popup */}
-      {isPopupVisible && (
-        <Popup description={description} onClose={closePopup} />
-      )}
       <button
         className="bg-white rounded-3xl text-[#030303] leading-[18px] font-[600]
         absolute mobile:right-[24px] laptop:right-[12px] top-[24px]
@@ -95,7 +68,6 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
               justifyContent: 'space-between',
             }}
           >
-            Text in a modal{' '}
             <CancelIcon
               sx={{
                 position: 'absolute',
