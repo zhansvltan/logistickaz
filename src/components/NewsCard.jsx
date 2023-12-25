@@ -15,7 +15,7 @@ const style = {
   borderRadius: '24px',
   p: 5,
   overflow: 'scroll',
-  height: '25rem',
+  height: '35rem',
 }
 
 const Card = ({ imageSrc, name, buttontext, description }) => {
