@@ -69,14 +69,6 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
             }}
           >
             Информация подробнее <CancelIcon onClick={handleClose} />
-            <CancelIcon
-              sx={{
-                position: 'absolute',
-                right: '10px',
-                cursor: 'pointer',
-              }}
-              onClick={handleClose}
-            />
           </Typography>
           <img
             src={imageSrc}
