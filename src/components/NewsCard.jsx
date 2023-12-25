@@ -11,9 +11,9 @@ const style = {
   width: '80%',
   bgcolor: 'background.paper',
   border: '1px solid #000',
-  boxShadow: 24,
-  borderRadius: '10px',
-  p: 4,
+  boxShadow: 0,
+  borderRadius: '24px',
+  p: 5,
   overflow: 'scroll',
   height: '25rem',
 }
@@ -65,8 +65,10 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
+              marginBottom: '20px',
             }}
           >
+            Информация подробнее <CancelIcon onClick={handleClose} />
             <CancelIcon
               sx={{
                 position: 'absolute',
@@ -76,6 +78,11 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
               onClick={handleClose}
             />
           </Typography>
+          <img
+            src={imageSrc}
+            alt={name}
+            className=" flex justify-center align-center mb-4 rounded-3xl w-[400px] max-h-[300px] object-cover"
+          />
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {description}
           </Typography>
