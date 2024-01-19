@@ -28,6 +28,7 @@ export default function HeadComponent() {
       >
         <img
           src="assets/azamat.jpg"
+          style={{ marginTop: '48px' }}
           className="mobile:w-[75%] mobile:hidden tablet:w-[60%] laptop:w-[46%] laptop:block"
         />
         <div className="flex flex-col gap-4">
@@ -38,7 +39,7 @@ export default function HeadComponent() {
             className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
-          laptop:text-start laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
+          laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
             Является одним из основателей Ассоциации логистических и
             индустриальных парков.
@@ -47,15 +48,26 @@ export default function HeadComponent() {
             className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
-          laptop:text-start laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
+          laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
             Окончил Казахский национальный университет имени Аль-Фараби,
             Гарвардский Университет и Гонконгский университет науки и
             технологии.
           </p>
+          <p
+            className="text-[#000000] m-0 p-0 
+          mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
+          tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
+          laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
+          >
+            В разные годы работал на руководящих должностях в ТОО «Самрук-Казына
+            Инвест», ООО «KTZ Express Hong Kong». Имеет обширный опыт в
+            транспортно-логистической сфере. Участвовал в деятельности бондовых
+            зон в Китае и в продвижении экспорта через индустриальные зоны.
+          </p>
         </div>
       </div>
-      <p
+      {/*  <p
         className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[75%]
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
@@ -65,7 +77,7 @@ export default function HeadComponent() {
         Инвест», ООО «KTZ Express Hong Kong». Имеет обширный опыт в
         транспортно-логистической сфере. Участвовал в деятельности бондовых зон
         в Китае и в продвижении экспорта через индустриальные зоны.
-      </p>
+      </p> */}
       <p
         className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[75%]
