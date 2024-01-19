@@ -65,6 +65,18 @@ export default function HeadComponent() {
             транспортно-логистической сфере. Участвовал в деятельности бондовых
             зон в Китае и в продвижении экспорта через индустриальные зоны.
           </p>
+          <p
+            className="text-[#000000] m-0 p-0 
+          mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[100%]
+          tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
+          laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
+          >
+            Занимал должность Советника Заместителя Премьер-Министра Республики
+            Казахстан, Вице-министра торговли и интеграции Республики Казахстан,
+            Генерального директора АО «Центр торговой политики «QazTrade». В
+            настоящее время является Генеральным директором Integrity Logistics
+            Ltd.
+          </p>
         </div>
       </div>
       {/*  <p
@@ -78,7 +90,7 @@ export default function HeadComponent() {
         транспортно-логистической сфере. Участвовал в деятельности бондовых зон
         в Китае и в продвижении экспорта через индустриальные зоны.
       </p> */}
-      <p
+      {/* <p
         className="text-[#000000] m-0 p-0 
           mobile:text-justify  mobile:leading-[18px] mobile:text-[14px] mobile:w-[75%]
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
@@ -88,7 +100,7 @@ export default function HeadComponent() {
         Казахстан, Вице-министра торговли и интеграции Республики Казахстан,
         Генерального директора АО «Центр торговой политики «QazTrade». В
         настоящее время является Генеральным директором Integrity Logistics Ltd.
-      </p>
+      </p> */}
     </div>
   )
 }
