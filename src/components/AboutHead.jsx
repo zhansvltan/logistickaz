@@ -31,7 +31,7 @@ export default function HeadComponent() {
           className="mobile:w-[75%] mobile:hidden tablet:w-[60%] laptop:w-[46%] laptop:block"
         />
         <div className="flex flex-col gap-4">
-          <h2 className="text-[#000000] laptop:text-start laptop:leading-[30px] laptop:text-[24px] font-[500]">
+          <h2 className="text-[#000000] mobile:text-center laptop:text-start laptop:leading-[30px] laptop:text-[24px] font-[600]">
             Азамат Асқарұлы
           </h2>
           <p
