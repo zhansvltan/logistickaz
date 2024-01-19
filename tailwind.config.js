@@ -28,6 +28,7 @@ export default {
     './src/components/News.jsx',
     './src/components/ParkCard.jsx',
     './src/components/Parks.jsx',
+    '.src/components/AboutHead.jsx',
   ],
   plugins: [],
 }
