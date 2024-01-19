@@ -33,9 +33,9 @@ export default function ContactComponent() {
           <button className={style.button}>Отправить</button>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.043025332603!2d71.41677177689787!3d51.089213471721266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585ab1a2fc967%3A0x29a4bb7370d5dfae!2sProspekt%20Mangilik%20Yel.%2055%2C%20Astana%20020000!5e0!3m2!1sen!2skz!4v1703419267507!5m2!1sen!2skz"
-          width="100%"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.108219776062!2d71.43020617673275!3d51.1249118385732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841eac167fb3%3A0xa835e4d4496ca3cb!2sDostyq%20St%2016%2C%20Astana%20020000!5e0!3m2!1sen!2skz!4v1705652284075!5m2!1sen!2skz"
           height="445"
+          width="100%"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
@@ -57,9 +57,9 @@ export default function ContactComponent() {
         `}
         >
           <h3 className={style.contacth3}>Посетите нас</h3>
-          <p className={style.contacttext}>г. Астана, район Есиль,</p>
-          <p className={style.contacttext}>проспект Мангилик Ел,</p>
-          <p className={style.contacttext}>здание 55/23</p>
+          <p className={style.contacttext}>г. Астана, район Есиль,</p>          
+          <p className={style.contacttext}>ул. Достык, 16</p>
+          <p className={style.contacttext}>24 этаж, офис 19</p>
         </div>
       </div>
     </div>
