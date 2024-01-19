@@ -7,6 +7,7 @@ import AboutComponent from '../components/About'
 import MembershipComponent from '../components/Membership'
 import ParksComponent from '../components/Parks'
 import ContactComponent from '../components/Contact'
+import HeadComponent from '../components/AboutHead'
 
 const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ const HomePage = () => {
       <NewsComponent />
       <EventsComponent />
       <AboutComponent />
+      <HeadComponent />
       <MembershipComponent />
       <ParksComponent />
       <ContactComponent />
