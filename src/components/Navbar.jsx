@@ -36,11 +36,11 @@ export default function NavComponent() {
       <div
         className="flex items-center justify-center
         mobile:top-[6vh] mobile:py-4
-        laptop:top-[0vh] laptop:py-0 laptop:text-[26px] laptop:gap-[20px] laptop:w-[75%] laptop:px-[70px]"
+        laptop:top-[0vh] laptop:py-0 laptop:text-[26px] laptop:gap-[20px] laptop:w-[85%] laptop:px-[70px]"
       >
         <div
           className={`flex gap-[1.4vw]
-          mobile:absolute mobile:top-[6.5vh] mobile:w-[30%] mobile:items-center mobile:py-4 mobile:right-[0px] mobile:bg-indigo-700
+          mobile:absolute mobile:top-[6.5vh] mobile:w-[35%] mobile:items-center mobile:py-4 mobile:right-[0px] mobile:bg-indigo-700
           tablet:top-[11vh] bigtablet:top-[7vh]
           laptop:static laptop:bg-transparent laptop:w-[100%] laptop:items-center laptop:py-0
         ${
@@ -52,6 +52,9 @@ export default function NavComponent() {
           </Link>
           <Link to="/" onClick={() => handleScrollClick('about')}>
             О нас
+          </Link>
+          <Link to="/" onClick={() => handleScrollClick('abouthead')}>
+            О председателе
           </Link>
           <Link to="/" onClick={() => handleScrollClick('mem')}>
             Услуги
