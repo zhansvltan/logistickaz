@@ -45,8 +45,7 @@ export default function ContactComponent() {
       <div className={style.box}>
         <div className={style.subsection}>
           <h3 className={style.contacth3}>Позвоните нам</h3>
-          <p className={style.contacttext}>+7 777 77 77</p>
-          <p className={style.contacttext}>+7 777 77 77</p>
+          <p className={style.contacttext}>+7 707 317 3545</p>
         </div>
         <div className={style.subsection}>
           <h3 className={style.contacth3}>Напишите нам</h3>
