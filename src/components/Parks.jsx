@@ -1,26 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import ParkCard from './ParkCard.jsx'
+import { useTranslation } from 'react-i18next'
 
 const ParksComponent = () => {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   const cardsData = [
     {
       imageSrc: 'assets/park1.svg',
-      text1: 'Индустриальный парк',
-      name: 'Название парка №1',
-      text2: 'Компания №1',
+      text1: t('ind_park'),
+      name: t('name1'),
+      text2: t('company1'),
     },
     {
       imageSrc: 'assets/park2.svg',
-      text1: 'Логистический парк',
-      name: 'Название парка №2',
-      text2: 'Компания №2',
+      text1: t('log_park'),
+      name: t('name2'),
+      text2: t('company2'),
     },
     {
       imageSrc: 'assets/park3.svg',
-      text1: 'Индустриальный парк',
-      name: 'Название парка №3',
-      text2: 'Компания №3',
+      text1: t('ind_park'),
+      name: t('name3'),
+      text2: t('company3'),
     },
   ]
 
@@ -33,7 +40,7 @@ const ParksComponent = () => {
        tablet:text-[24px] tablet:leading-[40px]
        laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:px-0 laptop:pl-[12vw]"
         >
-          Индустриальные и логистические парки Ассоциации
+          {t('parks')}
         </h2>
       </div>
       <div

@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Link } from 'react-router-dom'
 
-const Card = ({ imageSrc, name, buttontext, link, description }) => {
+const Card = ({ imageSrc, name, buttontext, link }) => {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   return (
     <div
       className="overflow-hidden  relative flex-col p-4

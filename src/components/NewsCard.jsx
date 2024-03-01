@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Modal from '@mui/material/Modal'
 import CancelIcon from '@mui/icons-material/Cancel'
+import { useTranslation } from 'react-i18next'
 const style = {
   position: 'absolute',
   top: '50%',
@@ -19,10 +20,15 @@ const style = {
 }
 
 const Card = ({ imageSrc, name, buttontext, description }) => {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   const [open, setOpen] = React.useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
-
   return (
     <div
       className="overflow-hidden relative flex-col p-4
@@ -68,7 +74,7 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
               marginBottom: '20px',
             }}
           >
-            Информация подробнее <CancelIcon onClick={handleClose} />
+            {t('more')} <CancelIcon onClick={handleClose} />
           </Typography>
           <img
             src={imageSrc}

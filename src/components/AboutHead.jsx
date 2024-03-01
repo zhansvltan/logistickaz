@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function HeadComponent() {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   return (
     <div
       className="flex flex-col justify-center mobile:mt-8 laptop:mt-16
@@ -14,7 +21,7 @@ export default function HeadComponent() {
         tablet:text-[24px] tablet:leading-[40px]
         laptop:leading-[48px] laptop:text-[32px] laptop:text-start"
       >
-        О Председателе
+        {t('about_chairman')}
       </h1>
 
       <img
@@ -33,7 +40,7 @@ export default function HeadComponent() {
         />
         <div className="flex flex-col gap-4">
           <h2 className="text-[#000000] mobile:text-center laptop:text-start laptop:leading-[30px] laptop:text-[24px] font-[600]">
-            Азамат Асқарұлы
+            {t('azamat')}
           </h2>
           <p
             className="text-[#000000] m-0 p-0 
@@ -41,8 +48,7 @@ export default function HeadComponent() {
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
           laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
-            Является одним из основателей Ассоциации логистических и
-            индустриальных парков.
+            {t('info1')}
           </p>
           <p
             className="text-[#000000] m-0 p-0 
@@ -50,9 +56,7 @@ export default function HeadComponent() {
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
           laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
-            Окончил Казахский национальный университет имени Аль-Фараби,
-            Гарвардский Университет и Гонконгский университет науки и
-            технологии.
+            {t('info2')}
           </p>
           <p
             className="text-[#000000] m-0 p-0 
@@ -60,10 +64,7 @@ export default function HeadComponent() {
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
           laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
-            В разные годы работал на руководящих должностях в ТОО «Самрук-Казына
-            Инвест», ООО «KTZ Express Hong Kong». Имеет обширный опыт в
-            транспортно-логистической сфере. Участвовал в деятельности бондовых
-            зон в Китае и в продвижении экспорта через индустриальные зоны.
+            {t('info3')}
           </p>
           <p
             className="text-[#000000] m-0 p-0 
@@ -71,11 +72,7 @@ export default function HeadComponent() {
           tablet:leading-[24px] tablet:text-[20px] tablet:w-[95%]
           laptop:text-justify laptop:leading-[30px] laptop:text-[20px] laptop:w-[90%]"
           >
-            Занимал должность Советника Заместителя Премьер-Министра Республики
-            Казахстан, Вице-министра торговли и интеграции Республики Казахстан,
-            Генерального директора АО «Центр развития торговой политики «QazTrade». В
-            настоящее время является Генеральным директором Integrity Logistics
-            Ltd.
+            {t('info4')}
           </p>
         </div>
       </div>
