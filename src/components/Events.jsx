@@ -1,26 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Card from './EventsCard'
+import { useTranslation } from 'react-i18next'
 
 const EventsComponent = () => {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   const cardsData = [
     {
       imageSrc: 'assets/event1.jpeg',
-      name: 'Исполнение поручений Президента: в Казахстане утверждена Дорожная карта по развитию СЭЗ',
+      name: t('events_title1'),
       description: 'Описание мероприятия',
-      buttontext: 'Подробнее',
+      buttontext: t('more'),
     },
     {
       imageSrc: 'assets/event2.jpeg',
-      name: 'Работа по развитию и повышению эффективности СЭЗ будет продолжена',
+      name: t('events_title2'),
       description: 'Описание мероприятия',
-      buttontext: 'Подробнее',
+      buttontext: t('more'),
     },
     {
       imageSrc: 'assets/event3.jpeg',
-      name: 'Сенаторы встретились с участниками СЭЗ «Астана – новый город»',
+      name: t('events_title3'),
       description: 'Описание мероприятия',
-      buttontext: 'Подробнее',
+      buttontext: t('more'),
     },
   ]
 
@@ -33,7 +40,7 @@ const EventsComponent = () => {
        tablet:text-[24px] tablet:leading-[40px]
        laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:pl-[9.4vw]"
         >
-          Мероприятия Ассоциации
+          {t('activities')}
         </h2>
       </div>
       <div

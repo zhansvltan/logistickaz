@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function MembershipComponent() {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   return (
     <div id="mem" className="">
       <h1
@@ -9,7 +16,7 @@ export default function MembershipComponent() {
        tablet:text-[24px] tablet:leading-[40px]
        laptop:text-[32px] laptop:leading-[48px] laptop:text-start laptop:px-0 laptop:pl-[12vw]"
       >
-        Услуги и преимущества членства в Ассоциации
+        {t('mem_services')}
       </h1>
       <div
         className="flex justify-center items-center 
@@ -33,7 +40,7 @@ export default function MembershipComponent() {
           mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
-            Связь с государством
+            {t('gov_connect')}
           </h2>
           <img
             src="assets/mem2.svg"
@@ -47,8 +54,7 @@ export default function MembershipComponent() {
         mobile:text-justify mobile:w-[75%]  mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
-          Оперативный диалог с государством по вопросу регулирования отрасли и
-          государственной поддержки
+          {t('gov_info')}
         </p>
       </div>
       <div
@@ -61,8 +67,7 @@ export default function MembershipComponent() {
         mobile:hidden mobile:text-center   mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%] laptop:block"
         >
-          Коллективный маркетинг и прямой доступ к запросам на размещение
-          производства
+          {t('marketing_info')}
         </p>
         <div
           className="flex justify-around items-center bg-[#f0f0f0] rounded-3xl p-4 
@@ -81,7 +86,7 @@ export default function MembershipComponent() {
           mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
-            Продвижение и маркетинг
+            {t('marketing')}
           </h2>
           <img
             src="assets/mem4.svg"
@@ -95,8 +100,7 @@ export default function MembershipComponent() {
         mobile:block mobile:text-justify mobile:w-[75%] mobile:text-[14px] 
         laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%] laptop:hidden"
         >
-          Коллективный маркетинг и прямой доступ к запросам на размещение
-          производства
+          {t('marketing_info')}
         </p>
       </div>
       <div className="flex justify-center items-center mobile:flex-col mobile:space-y-4 mobile:mb-4 laptop:space-y-0 laptop:flex-row laptop:gap-[6vw]">
@@ -116,7 +120,7 @@ export default function MembershipComponent() {
           mobile:leading-[20px] mobile:text-[14px] 
           laptop:leading-[42px] laptop:text-[32px] w-[60%]"
           >
-            Расширение партнерства
+            {t('partnership')}
           </h2>
           <img
             src="assets/mem6.svg"
@@ -130,7 +134,7 @@ export default function MembershipComponent() {
           mobile:text-justify mobile:w-[75%]  mobile:text-[14px] 
           laptop:text-start laptop:text-[20px] laptop:leading-[30px] laptop:w-[40%]"
         >
-          Расширение партнерской сети и прямой доступ к запросам от инвесторов
+          {t('partnership_info')}
         </p>
       </div>
     </div>

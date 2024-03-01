@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function ImgComponent() {
+  const { t, i18n } = useTranslation()
+  const [locale, setLocale] = useState(i18n.language)
+  const handlecChangeLanguage = (language) => {
+    i18n.changeLanguage(language)
+    setLocale(language)
+  }
   return (
     <div style={{ background: 'black' }}>
       <img
@@ -15,7 +22,7 @@ export default function ImgComponent() {
         bigtablet:top-[160px] bigtablet:left-[20%] bigtablet:text-[32px] bigtablet:leading-[48px] bigtablet:w-[50%]
         laptop:text-start laptop:w-[40%] laptop:top-[26%] laptop:left-[13.6vw] laptop:text-[48px] laptop:leading-[62px]"
       >
-        Ассоциация логистических и индустриальных парков Казахстана
+        {t('company')}
       </p>
     </div>
   )
