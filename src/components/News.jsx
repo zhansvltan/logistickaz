@@ -28,6 +28,12 @@ const NewsComponent = () => {
       buttontext: t('read'),
       description: t('news_description3'),
     },
+    {
+      imageSrc: 'assets/news4.jpg',
+      name: t('news_title4'),
+      buttontext: t('read'),
+      description: t('news_description4'),
+    },
   ]
 
   const [popupData, setPopupData] = useState(null)
