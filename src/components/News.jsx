@@ -65,7 +65,7 @@ const NewsComponent = () => {
         </h2>
       </div>
       <div
-        className="flex justify-between items-stretch
+        className="flex-wrap items-stretch
         mobile:gap-[10px] mobile:justify-center mobile:flex-wrap
         tablet:gap-[20px] tablet:justify-center tablet:flex-wrap 
         laptop:gap-[30px] laptop:justify-between laptop:pl-[9.4vw] laptop:max-w-[90%] laptop:flex-row"
