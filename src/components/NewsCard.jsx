@@ -79,7 +79,7 @@ const Card = ({ imageSrc, name, buttontext, description }) => {
           <img
             src={imageSrc}
             alt={name}
-            className=" flex justify-center align-center mb-4 rounded-3xl w-[400px] max-h-[300px] object-cover"
+            className=" flex justify-center align-center mb-4 rounded-3xl w-[400px] max-h-[600px] object-cover"
           />
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {description}
