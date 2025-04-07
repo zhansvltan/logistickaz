@@ -11,6 +11,12 @@ const NewsComponent = () => {
   }
   const cardsData = [
     {
+      imageSrc: 'assets/news7.jpeg',
+      name: t('news_title7'),
+      buttontext: t('read'),
+      description: t('news_description7'),
+    },
+    {
       imageSrc: 'assets/news6.jpg',
       name: t('news_title6'),
       buttontext: t('read'),
